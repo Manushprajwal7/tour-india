@@ -10,6 +10,67 @@ export interface Package {
 
 export const allPackages: Package[] =[
   {
+    "id": 10,
+    "title": "Arupadai Veedu Murugan Tour",
+    "duration": "6 Nights / 7 Days",
+    "highlights": "All 6 sacred Murugan temples, Meenakshi Temple",
+    "image": "/Arupadai Veedu Murugan.jpg",
+    "description": "A dedicated pilgrimage to all six Arupadai Veedu (battlefield abodes) of Lord Murugan across Tamil Nadu.",
+    "itinerary": [
+      "Day 1: Arrival in Chennai – Transfer to hotel",
+      "Day 2: Chennai to Tiruvannamalai – Tirutani Murugan temple en route",
+      "Day 3: Tiruvannamalai to Kumbakonam – Tanjore temple & Swamimalai",
+      "Day 4: Kumbakonam to Madurai – Palamudircholai & Tiruparankundram",
+      "Day 5: Madurai to Tiruchendur – Seaside Murugan temple & return",
+      "Day 6: Madurai to Trichy – Palani Murugan temple en route",
+      "Day 7: Trichy temple visits & airport departure"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Arupadai Veedu & Panchabootha Stalam",
+    "duration": "9 Nights / 10 Days",
+    "highlights": "6 Murugan temples, 5 Elemental Shiva temples",
+    "image": "/Arupadai Veedu & Panchabootha Stalam.jpg",
+    "description": "A comprehensive spiritual journey covering both the 6 Arupadai Veedu Murugan temples and the 5 Panchabootha (elemental) Shiva temples.",
+    "itinerary": [
+      "Day 1: Arrival in Trichy – Transfer to hotel",
+      "Day 2: Trichy to Rameswaram – Water element temple en route",
+      "Day 3: Rameswaram to Madurai – Arupadai Veedu temples",
+      "Day 4: Madurai to Palani – More Arupadai Veedu temples",
+      "Day 5: Palani to Kumbakonam – Tanjore Big Temple",
+      "Day 6: Kumbakonam to Tiruvannamalai – Sky & Fire element temples",
+      "Day 7: Tiruvannamalai to Kanchipuram – Earth element temple",
+      "Day 8: Kanchipuram to Sri Kalahasti – Air element temple",
+      "Day 9: Sri Kalahasti to Chennai – Temple visits",
+      "Day 10: Chennai airport departure"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Kerala & Tamil Nadu Fusion",
+    "duration": "13 Nights / 14 Days",
+    "highlights": "Houseboat stay, Meenakshi Temple, Kanyakumari, Temples",
+    "image": "/chinese-fishing-nets-kochi-sunset-kerala-tradition.jpg",
+    "description": "A perfect blend of Kerala's backwaters and hill stations with Tamil Nadu's iconic temples and spiritual destinations.",
+    "itinerary": [
+      "Day 1: Arrival in Cochin – City tour",
+      "Day 2: Cochin to Alleppey – Houseboat stay",
+      "Day 3: Alleppey to Munnar – Tea plantations",
+      "Day 4: Munnar to Coimbatore – Eravikulam Park & Isha Yoga Center",
+      "Day 5: Coimbatore to Madurai – Palani & temple visits",
+      "Day 6: Madurai to Kanyakumari – Sunset point & temple",
+      "Day 7: Kanyakumari to Rameswaram – Tiruchendur temple en route",
+      "Day 8: Rameswaram to Kumbakonam – Ramanathaswamy temple",
+      "Day 9: Kumbakonam to Trichy – Tanjore Big Temple",
+      "Day 10: Trichy to Tiruvannamalai – Arunachaleshwarar temple",
+      "Day 11: Tiruvannamalai to Tirupati – Golden temple en route",
+      "Day 12: Tirupati to Chennai – Tirutani temple en route",
+      "Day 13: Chennai exploration – Sightseeing & shopping",
+      "Day 14: Chennai airport departure"
+    ]
+  },
+  {
     "id": 1,
     "title": "Karnataka Heritage Grand Tour",
     "duration": "14 Nights / 15 Days",
@@ -142,11 +203,12 @@ export const allPackages: Package[] =[
       "Day 2: Bangalore to Hassan – Shravanabelagola & Belur/Halebid temples",
       "Day 3: Hassan to Kollur – Sringeri Sharada Peetham & Mookambika temple",
       "Day 4: Kollur to Murudeshwar – World's second-tallest Shiva statue",
-      "Day 5: Murudeshwar to Mangalore – Udupi Krishna temple en route",
-      "Day 6: Mangalore to Madikere – Dharmasthala & Subramanya temples",
-      "Day 7: Madikere to Mysore – Tibetan Monastery & Maharaja Palace",
-      "Day 8: Mysore to Bangalore – Chamundeshwari temple",
-      "Day 9: Bangalore airport departure"
+      "Day 5: Kollur to Murudeshwar – World's second-tallest Shiva statue",
+      "Day 6: Murudeshwar to Mangalore – Udupi Krishna temple en route",
+      "Day 7: Mangalore to Madikere – Dharmasthala & Subramanya temples",
+      "Day 8: Madikere to Mysore – Tibetan Monastery & Maharaja Palace",
+      "Day 9: Mysore to Bangalore – Chamundeshwari temple",
+      "Day 10: Bangalore airport departure"
     ]
   },
   {
@@ -183,67 +245,6 @@ export const allPackages: Package[] =[
       "Day 4: Shirdi to Nashik – Sula Vineyards & Trimbakeshwar temple",
       "Day 5: Nashik to Mumbai – Bhimashankar Jyotirlinga en route",
       "Day 6: Mumbai exploration & airport departure"
-    ]
-  },
-  {
-    "id": 10,
-    "title": "Arupadai Veedu Murugan Tour",
-    "duration": "6 Nights / 7 Days",
-    "highlights": "All 6 sacred Murugan temples, Meenakshi Temple",
-    "image": "/Arupadai Veedu Murugan.jpg",
-    "description": "A dedicated pilgrimage to all six Arupadai Veedu (battlefield abodes) of Lord Murugan across Tamil Nadu.",
-    "itinerary": [
-      "Day 1: Arrival in Chennai – Transfer to hotel",
-      "Day 2: Chennai to Tiruvannamalai – Tirutani Murugan temple en route",
-      "Day 3: Tiruvannamalai to Kumbakonam – Tanjore temple & Swamimalai",
-      "Day 4: Kumbakonam to Madurai – Palamudircholai & Tiruparankundram",
-      "Day 5: Madurai to Tiruchendur – Seaside Murugan temple & return",
-      "Day 6: Madurai to Trichy – Palani Murugan temple en route",
-      "Day 7: Trichy temple visits & airport departure"
-    ]
-  },
-  {
-    "id": 11,
-    "title": "Arupadai Veedu & Panchabootha Stalam",
-    "duration": "9 Nights / 10 Days",
-    "highlights": "6 Murugan temples, 5 Elemental Shiva temples",
-    "image": "/Arupadai Veedu & Panchabootha Stalam.jpg",
-    "description": "A comprehensive spiritual journey covering both the 6 Arupadai Veedu Murugan temples and the 5 Panchabootha (elemental) Shiva temples.",
-    "itinerary": [
-      "Day 1: Arrival in Trichy – Transfer to hotel",
-      "Day 2: Trichy to Rameswaram – Water element temple en route",
-      "Day 3: Rameswaram to Madurai – Arupadai Veedu temples",
-      "Day 4: Madurai to Palani – More Arupadai Veedu temples",
-      "Day 5: Palani to Kumbakonam – Tanjore Big Temple",
-      "Day 6: Kumbakonam to Tiruvannamalai – Sky & Fire element temples",
-      "Day 7: Tiruvannamalai to Kanchipuram – Earth element temple",
-      "Day 8: Kanchipuram to Sri Kalahasti – Air element temple",
-      "Day 9: Sri Kalahasti to Chennai – Temple visits",
-      "Day 10: Chennai airport departure"
-    ]
-  },
-  {
-    "id": 12,
-    "title": "Kerala & Tamil Nadu Fusion",
-    "duration": "13 Nights / 14 Days",
-    "highlights": "Houseboat stay, Meenakshi Temple, Kanyakumari, Temples",
-    "image": "/chinese-fishing-nets-kochi-sunset-kerala-tradition.jpg",
-    "description": "A perfect blend of Kerala's backwaters and hill stations with Tamil Nadu's iconic temples and spiritual destinations.",
-    "itinerary": [
-      "Day 1: Arrival in Cochin – City tour",
-      "Day 2: Cochin to Alleppey – Houseboat stay",
-      "Day 3: Alleppey to Munnar – Tea plantations",
-      "Day 4: Munnar to Coimbatore – Eravikulam Park & Isha Yoga Center",
-      "Day 5: Coimbatore to Madurai – Palani & temple visits",
-      "Day 6: Madurai to Kanyakumari – Sunset point & temple",
-      "Day 7: Kanyakumari to Rameswaram – Tiruchendur temple en route",
-      "Day 8: Rameswaram to Kumbakonam – Ramanathaswamy temple",
-      "Day 9: Kumbakonam to Trichy – Tanjore Big Temple",
-      "Day 10: Trichy to Tiruvannamalai – Arunachaleshwarar temple",
-      "Day 11: Tiruvannamalai to Tirupati – Golden temple en route",
-      "Day 12: Tirupati to Chennai – Tirutani temple en route",
-      "Day 13: Chennai exploration – Sightseeing & shopping",
-      "Day 14: Chennai airport departure"
     ]
   },
   {

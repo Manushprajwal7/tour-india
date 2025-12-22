@@ -25,25 +25,22 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden -mb-20">
-      {/* Updated Background Image */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
         style={{
           backgroundImage: `url('/hero-bg.jpg')`,
-          width: "100vw",
-          marginLeft: "calc(-50vw + 50%)",
-          marginRight: "calc(-50vw + 50%)",
         }}
       />
 
       {/* Navigation moved inside hero section */}
-      <div className="absolute top-0 left-0 right-0 z-50 pl-31">
+      <div className="absolute top-0 left-0 right-0 z-50">
         <Navigation />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pt-1 flex flex-col items-center justify-center min-h-screen pb-20">
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center justify-center min-h-screen py-20">
         {/* Logo in the center */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

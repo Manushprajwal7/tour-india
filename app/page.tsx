@@ -12,11 +12,7 @@ export default function HomePage() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="min-h-screen w-full isolate relative pb-20">
-         <div className="container mx-auto pb-20">
-        <HeroSection />
-        </div>
-      </section>
+      <HeroSection />
 
       {/* Featured Packages Section */}
       <section className="min-h-screen w-full isolate py-0">
