@@ -71,7 +71,7 @@ export function HeroSection() {
             </b>
             <br />
             <b>
-              <span className="italic">of Timeless Nation</span>
+              <span className="italic">of A Timeless Nation</span>
             </b>
           </motion.h1>
 
