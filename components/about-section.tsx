@@ -41,9 +41,9 @@ export function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative lg:w-1/2 bg-white/0 p-2 pt-30 rounded-2xl shadow-lg"
+            className="relative lg:w-1/2 bg-white/95 backdrop-blur-sm md:bg-white/0 p-8 md:p-2 md:pt-30 rounded-2xl shadow-xl md:shadow-none"
           >
-            <h2 className="font-serif text-3xl md:text-4xl text-[#1e3a5f] mb-0 -mt-[90px]">
+            <h2 className="font-serif text-3xl md:text-4xl text-[#1e3a5f] mb-4 md:mb-0 md:-mt-[90px]">
               <span className="font-bold">About Us:</span> Our Story
             </h2>
             <p className="text-[#1e3a5f]/100 leading-relaxed mb-0 ">
