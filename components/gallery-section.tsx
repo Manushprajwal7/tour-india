@@ -85,7 +85,12 @@ export function GallerySection() {
   return (
     <section
       id="gallery"
-      className="w-full py-20 relative overflow-hidden -mt-20 min-h-screen isolate bg-[#f8f4e8] md:bg-[url('/background.png')] md:bg-cover md:bg-center md:bg-no-repeat"
+      className="w-full py-20 relative overflow-hidden -mt-20 min-h-screen isolate bg-[url('/mobile_view.png')] bg-cover bg-center bg-no-repeat md:bg-[url('/background.png')] md:bg-[length:100%_100%] md:bg-center md:bg-no-repeat"
+      style={{
+        width: "100vw",
+        marginLeft: "calc(-50vw + 50%)",
+        marginRight: "calc(-50vw + 50%)",
+      }}
     >
       <div className="relative z-10 max-w-6xl mx-auto px-4 w-full">
         <motion.div

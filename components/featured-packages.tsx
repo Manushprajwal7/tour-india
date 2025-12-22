@@ -11,12 +11,12 @@ export function FeaturedPackages() {
   return (
     <section
       id="tours"
-      className="w-full py-20 relative overflow-hidden -mt-20 min-h-screen isolate bg-[#f8f4e8] md:bg-[url('/discover.png')] md:bg-[length:100%_100%] md:bg-center md:bg-no-repeat"
-      style={{
-        width: "100vw",
-        marginLeft: "calc(-50vw + 50%)",
-        marginRight: "calc(-50vw + 50%)",
-      }}
+        className="py-20 relative overflow-hidden -mt-20 min-h-screen bg-[url('/mobile_view.png')] md:bg-[url('/discover.png')] bg-[length:100%_100%] bg-center bg-no-repeat"
+        style={{
+          width: "100vw",
+          marginLeft: "calc(-50vw + 50%)",
+          marginRight: "calc(-50vw + 50%)",
+        }}
     >
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <motion.div
@@ -38,11 +38,10 @@ export function FeaturedPackages() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-36 xl:gap-12 pt-12 max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-24 xl:gap-32 pt-12 max-w-7xl mx-auto px-6">
           {/* First Package Card - Kerala */}
           <div
             className="package-card-container-kerala "
-            style={{ marginRight: "30px" }}
           >
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -64,10 +63,7 @@ export function FeaturedPackages() {
                   {packages[0].title}
                 </h3>
                 <p className="text-[#1e3a5f]/70 text-sm mb-2">
-                  {packages[0].duration} | From{" "}
-                  <span className="font-bold text-[#1e3a5f]">
-                    {packages[0].price}
-                  </span>
+                  {packages[0].duration}
                 </p>
                 <p className="text-[#1e3a5f]/60 text-sm mb-4">
                   Highlights: {packages[0].highlights}
@@ -104,10 +100,7 @@ export function FeaturedPackages() {
                   {packages[1].title}
                 </h3>
                 <p className="text-[#1e3a5f]/70 text-sm mb-2">
-                  {packages[1].duration} | From{" "}
-                  <span className="font-bold text-[#1e3a5f]">
-                    {packages[1].price}
-                  </span>
+                  {packages[1].duration}
                 </p>
                 <p className="text-[#1e3a5f]/60 text-sm mb-4">
                   Highlights: {packages[1].highlights}
@@ -125,7 +118,6 @@ export function FeaturedPackages() {
           {/* Third Package Card - Mysore */}
           <div
             className="package-card-container-mysore"
-            style={{ marginLeft: "30px" }}
           >
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -150,10 +142,7 @@ export function FeaturedPackages() {
                   {packages[2].title}
                 </h3>
                 <p className="text-[#1e3a5f]/70 text-sm mb-2">
-                  {packages[2].duration} | From{" "}
-                  <span className="font-bold text-[#1e3a5f]">
-                    {packages[2].price}
-                  </span>
+                  {packages[2].duration}
                 </p>
                 <p className="text-[#1e3a5f]/60 text-sm mb-4">
                   Highlights: {packages[2].highlights}

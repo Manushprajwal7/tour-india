@@ -193,21 +193,7 @@ export function TestimonialsSection() {
           })}
         </div>
 
-        {/* Read More Reviews Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center mt-16"
-        >
-          <Link
-            href="#reviews"
-            className="inline-block border-2 border-[#1e3a5f] text-[#1e3a5f] px-8 py-3 rounded-full font-medium hover:bg-[#1e3a5f] hover:text-white transition-colors"
-          >
-            Read More Reviews
-          </Link>
-        </motion.div>
+     
       </div>
     </section>
   );

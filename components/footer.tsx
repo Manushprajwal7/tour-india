@@ -72,15 +72,17 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm text-white/70">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>123 Heritage Lane, Kochi, Kerala</span>
+                <span>2/444 Kollapuri Amman Street
+                  West Lakshmi Nagar, Mudichur
+                  Tambaram, Chennai - 600048</span>
               </li>
               <li className="flex items-center gap-2 text-sm text-white/70">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span>hello@tourindia.com</span>
+                <span>tourindia.murugan@gmail.com</span>
               </li>
               <li className="flex items-center gap-2 text-sm text-white/70">
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                <span>+91 81234 58000</span>
+                <span>+91 81234 58000 / +91 7892846766</span>
               </li>
             </ul>
           </div>
@@ -149,10 +151,10 @@ export function Footer() {
         <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center text-sm text-white/50">
           <p>© {new Date().getFullYear()}. Tour India. All rights reserved.</p>
           <div className="flex gap-4 mt-2 md:mt-0">
-            <Link href="#" className="hover:text-[#c9a227] transition-colors">
+            <Link href="/privacy-policy" className="hover:text-[#c9a227] transition-colors">
               Privacy Policy
             </Link>
-            <Link href="#" className="hover:text-[#c9a227] transition-colors">
+            <Link href="/terms-of-service" className="hover:text-[#c9a227] transition-colors">
               Terms of Service
             </Link>
           </div>

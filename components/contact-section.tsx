@@ -7,13 +7,13 @@ import { ContactForm } from "./contact-form";
 import { sendEmail } from "@/app/actions/send-email";
 import { toast } from "sonner";
 
-export function ContactSection() {
+export function ContactSection({ initialPackageName = "" }: { initialPackageName?: string }) {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
     phone: "",
     tripInterest: "south-india",
-    destination: "",
+    destination: initialPackageName ? `Package Enquiry: ${initialPackageName}` : "",
     numberOfTravelers: "",
     adults: "",
     children: "",

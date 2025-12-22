@@ -23,7 +23,11 @@ export const metadata: Metadata = {
     "Explore ancient temples, lush landscapes, and vibrant cultures with our premium guided tours across South India. Experience authentic Kerala backwaters, Tamil Nadu temples, and Mysore palaces.",
   keywords:
     "India tours, South India travel, Kerala backwaters, Tamil Nadu temples, Mysore palace, authentic India experience",
-    generator: 'v0.app'
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
+  generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -32,8 +36,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`${playfair.variable} ${lato.variable} font-sans antialiased`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${playfair.variable} ${lato.variable} font-sans antialiased`} suppressHydrationWarning>
         {children}
         <WhatsAppButton />
         <Toaster />
