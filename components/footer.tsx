@@ -22,7 +22,7 @@ export function Footer() {
               />
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
-              Curating authentic South Indian experiences since 2010. We
+              Curating authentic South Indian experiences since 1999. We
               specialize in luxury, heritage, and rural tours.
             </p>
           </div>
