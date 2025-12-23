@@ -1,2 +1,4 @@
 user-agent: *
 Allow: /
+
+Sitemap: https://tourindia24.com/sitemap.xml
