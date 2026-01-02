@@ -10,7 +10,7 @@ const testimonials = [
   {
     id: 1,
     name: "Moganaraj Shiva .",
-    location: "USA",
+    location: "Malasiya",
     rating: 5,
     quote:
       "Excellent tour arranger — guided us to the best attractions and hotels, making our trip smooth, enjoyable, and truly memorable!",
@@ -19,7 +19,7 @@ const testimonials = [
   {
     id: 2,
     name: "Ruben kuna ",
-    location: "UK",
+    location: "Malaysia",
     rating: 5,
     quote:
       "The trip was amazing and well organised. The organisers were very respectful and catered perfectly to our needs. We spent 8 days in india with no hiccups.",
@@ -28,7 +28,7 @@ const testimonials = [
   {
     id: 3,
     name: "Vimla.",
-    location: "Australia",
+    location: "Malaysia",
     rating: 5,
     quote:
       "A great and friendly travel agent whom I totally rely on for our every group trip for the past 3 years. Affordable pricing and most importantly,  Thanks to Mr.Murugan and his team.",
