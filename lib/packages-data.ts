@@ -8,32 +8,34 @@ export interface Package {
   itinerary?: string[];
 }
 
-export const allPackages: Package[] =[
+export const allPackages: Package[] = [
   {
-    "id": 10,
-    "title": "Arupadai Veedu Murugan Tour",
-    "duration": "6 Nights / 7 Days",
-    "highlights": "All 6 sacred Murugan temples, Meenakshi Temple",
-    "image": "/Arupadai Veedu Murugan.jpg",
-    "description": "A dedicated pilgrimage to all six Arupadai Veedu (battlefield abodes) of Lord Murugan across Tamil Nadu.",
-    "itinerary": [
+    id: 10,
+    title: "Arupadai Veedu Murugan Tour",
+    duration: "6 Nights / 7 Days",
+    highlights: "All 6 sacred Murugan temples, Meenakshi Temple",
+    image: "/Arupadai Veedu Murugan.jpg",
+    description:
+      "A dedicated pilgrimage to all six Arupadai Veedu (battlefield abodes) of Lord Murugan across Tamil Nadu.",
+    itinerary: [
       "Day 1: Arrival in Chennai – Transfer to hotel",
       "Day 2: Chennai to Tiruvannamalai – Tirutani Murugan temple en route",
       "Day 3: Tiruvannamalai to Kumbakonam – Tanjore temple & Swamimalai",
       "Day 4: Kumbakonam to Madurai – Palamudircholai & Tiruparankundram",
       "Day 5: Madurai to Tiruchendur – Seaside Murugan temple & return",
       "Day 6: Madurai to Trichy – Palani Murugan temple en route",
-      "Day 7: Trichy temple visits & airport departure"
-    ]
+      "Day 7: Trichy temple visits & airport departure",
+    ],
   },
   {
-    "id": 11,
-    "title": "Arupadai Veedu & Panchabootha Stalam",
-    "duration": "9 Nights / 10 Days",
-    "highlights": "6 Murugan temples, 5 Elemental Shiva temples",
-    "image": "/Arupadai Veedu & Panchabootha Stalam.jpg",
-    "description": "A comprehensive spiritual journey covering both the 6 Arupadai Veedu Murugan temples and the 5 Panchabootha (elemental) Shiva temples.",
-    "itinerary": [
+    id: 11,
+    title: "Arupadai Veedu & Panchabootha Stalam",
+    duration: "9 Nights / 10 Days",
+    highlights: "6 Murugan temples, 5 Elemental Shiva temples",
+    image: "/Arupadai Veedu & Panchabootha Stalam.jpg",
+    description:
+      "A comprehensive spiritual journey covering both the 6 Arupadai Veedu Murugan temples and the 5 Panchabootha (elemental) Shiva temples.",
+    itinerary: [
       "Day 1: Arrival in Trichy – Transfer to hotel",
       "Day 2: Trichy to Rameswaram – Water element temple en route",
       "Day 3: Rameswaram to Madurai – Arupadai Veedu temples",
@@ -43,17 +45,18 @@ export const allPackages: Package[] =[
       "Day 7: Tiruvannamalai to Kanchipuram – Earth element temple",
       "Day 8: Kanchipuram to Sri Kalahasti – Air element temple",
       "Day 9: Sri Kalahasti to Chennai – Temple visits",
-      "Day 10: Chennai airport departure"
-    ]
+      "Day 10: Chennai airport departure",
+    ],
   },
   {
-    "id": 12,
-    "title": "Kerala & Tamil Nadu Fusion",
-    "duration": "13 Nights / 14 Days",
-    "highlights": "Houseboat stay, Meenakshi Temple, Kanyakumari, Temples",
-    "image": "/chinese-fishing-nets-kochi-sunset-kerala-tradition.jpg",
-    "description": "A perfect blend of Kerala's backwaters and hill stations with Tamil Nadu's iconic temples and spiritual destinations.",
-    "itinerary": [
+    id: 12,
+    title: "Kerala & Tamil Nadu Fusion",
+    duration: "13 Nights / 14 Days",
+    highlights: "Houseboat stay, Meenakshi Temple, Kanyakumari, Temples",
+    image: "/chinese-fishing-nets-kochi-sunset-kerala-tradition.jpg",
+    description:
+      "A perfect blend of Kerala's backwaters and hill stations with Tamil Nadu's iconic temples and spiritual destinations.",
+    itinerary: [
       "Day 1: Arrival in Cochin – City tour",
       "Day 2: Cochin to Alleppey – Houseboat stay",
       "Day 3: Alleppey to Munnar – Tea plantations",
@@ -67,17 +70,18 @@ export const allPackages: Package[] =[
       "Day 11: Tiruvannamalai to Tirupati – Golden temple en route",
       "Day 12: Tirupati to Chennai – Tirutani temple en route",
       "Day 13: Chennai exploration – Sightseeing & shopping",
-      "Day 14: Chennai airport departure"
-    ]
+      "Day 14: Chennai airport departure",
+    ],
   },
   {
-    "id": 1,
-    "title": "Karnataka Heritage Grand Tour",
-    "duration": "14 Nights / 15 Days",
-    "highlights": "Hampi UNESCO site, Badami caves, Gokarna beaches",
-    "image": "/hampi-ancient-temple-ruins-stone-chariot-karnataka.jpg",
-    "description": "A comprehensive journey through Karnataka's rich history, architecture, and coastal beauty, covering ancient ruins, temples, and serene beaches.",
-    "itinerary": [
+    id: 1,
+    title: "Karnataka Heritage Grand Tour",
+    duration: "14 Nights / 15 Days",
+    highlights: "Hampi UNESCO site, Badami caves, Gokarna beaches",
+    image: "/hampi-ancient-temple-ruins-stone-chariot-karnataka.jpg",
+    description:
+      "A comprehensive journey through Karnataka's rich history, architecture, and coastal beauty, covering ancient ruins, temples, and serene beaches.",
+    itinerary: [
       "Day 1: Arrival in Bangalore – Transfer to hotel & relax",
       "Day 2: Bangalore to Hospet – Visit Kalinga Kote Fort",
       "Day 3: Hospet to Hampi – Full day UNESCO world heritage site sightseeing",
@@ -92,17 +96,18 @@ export const allPackages: Package[] =[
       "Day 12: Hassan to Mysore – Shravanabelagola & Brindavan Gardens",
       "Day 13: Mysore to Bangalore – Maharaja Palace & Somnathpur temple",
       "Day 14: Bangalore to Kolar – Temple tour & return to Bangalore",
-      "Day 15: Bangalore airport departure"
-    ]
+      "Day 15: Bangalore airport departure",
+    ],
   },
   {
-    "id": 2,
-    "title": "Kerala Backwater Retreat",
-    "duration": "7 Nights / 8 Days",
-    "highlights": "Alleppey houseboat, Kathakali show, Spice plantation",
-    "image": "/kerala-houseboat-on-backwaters-with-palm-trees--se.jpg",
-    "description": "A serene journey through Kerala's backwaters, hill stations, and cultural landmarks, featuring traditional houseboat stays and wildlife experiences.",
-    "itinerary": [
+    id: 2,
+    title: "Kerala Backwater Retreat",
+    duration: "7 Nights / 8 Days",
+    highlights: "Alleppey houseboat, Kathakali show, Spice plantation",
+    image: "/kerala-houseboat-on-backwaters-with-palm-trees--se.jpg",
+    description:
+      "A serene journey through Kerala's backwaters, hill stations, and cultural landmarks, featuring traditional houseboat stays and wildlife experiences.",
+    itinerary: [
       "Day 1: Arrival in Trivandrum – Transfer to Alleppey houseboat",
       "Day 2: Alleppey to Thekkady – Spice plantation visit & cultural shows",
       "Day 3: Thekkady to Munnar – Periyar wildlife sanctuary & tea plantations",
@@ -110,17 +115,18 @@ export const allPackages: Package[] =[
       "Day 5: Munnar to Kumarakom – Lake activities & bird watching",
       "Day 6: Kumarakom leisure day – Relaxation & backwater views",
       "Day 7: Kumarakom to Cochin – Fort Cochin sightseeing",
-      "Day 8: Cochin airport departure"
-    ]
+      "Day 8: Cochin airport departure",
+    ],
   },
   {
-    "id": 3,
-    "title": "Classic Kerala Experience",
-    "duration": "10 Nights / 11 Days",
-    "highlights": "Athirapally falls, Periyar boat ride, Backwater houseboat",
-    "image": "/munnar-tea.png",
-    "description": "An extensive Kerala tour covering hill stations, wildlife sanctuaries, backwaters, and beaches, with authentic cultural performances.",
-    "itinerary": [
+    id: 3,
+    title: "Classic Kerala Experience",
+    duration: "10 Nights / 11 Days",
+    highlights: "Athirapally falls, Periyar boat ride, Backwater houseboat",
+    image: "/munnar-tea.png",
+    description:
+      "An extensive Kerala tour covering hill stations, wildlife sanctuaries, backwaters, and beaches, with authentic cultural performances.",
+    itinerary: [
       "Day 1: Arrival in Cochin – Transfer to hotel",
       "Day 2: Cochin to Munnar – Visit Athirapally waterfalls & tea plantations",
       "Day 3: Munnar sightseeing – Eravikulam National Park & Rajamalai Hills",
@@ -131,49 +137,52 @@ export const allPackages: Package[] =[
       "Day 8: Alleppey to Kovalam – Beach relaxation",
       "Day 9: Kovalam to Trivandrum – Padmanabhaswamy Temple visit",
       "Day 10: Kovalam to Cochin – City tour & cultural dance show",
-      "Day 11: Cochin airport departure"
-    ]
+      "Day 11: Cochin airport departure",
+    ],
   },
   {
-    "id": 4,
-    "title": "Kashmir Valley Paradise",
-    "duration": "5 Nights / 6 Days",
-    "highlights": "Gulmarg gondola, Pahalgam valleys, Dal Lake shikara",
-    "image": "/kashmir.jpg",
-    "description": "Experience the breathtaking beauty of Kashmir with mountain vistas, lush valleys, iconic gardens, and a serene houseboat stay on Dal Lake.",
-    "itinerary": [
+    id: 4,
+    title: "Kashmir Valley Paradise",
+    duration: "5 Nights / 6 Days",
+    highlights: "Gulmarg gondola, Pahalgam valleys, Dal Lake shikara",
+    image: "/kashmir.jpg",
+    description:
+      "Experience the breathtaking beauty of Kashmir with mountain vistas, lush valleys, iconic gardens, and a serene houseboat stay on Dal Lake.",
+    itinerary: [
       "Day 1: Arrival in Srinagar – Transfer to hotel",
       "Day 2: Srinagar to Gulmarg – Gondola ride & scenic exploration",
       "Day 3: Gulmarg to Pahalgam – Auru Valley, Betab Valley & Chandan Vadi",
       "Day 4: Pahalgam exploration – Baisaran valley & horse riding",
       "Day 5: Pahalgam to Srinagar – Mughal gardens & Dal Lake shikara ride",
-      "Day 6: Srinagar airport departure"
-    ]
+      "Day 6: Srinagar airport departure",
+    ],
   },
   {
-    "id": 5,
-    "title": "Sri Lanka Cultural Discovery",
-    "duration": "5 Nights / 6 Days",
-    "highlights": "Elephant Orphanage, Temple of Tooth, Tea plantations",
-    "image": "/kanyakumari-sunrise.png",
-    "description": "Discover Sri Lanka's cultural treasures, from ancient temples and tea plantations to golden beaches and wildlife encounters.",
-    "itinerary": [
+    id: 5,
+    title: "Sri Lanka Cultural Discovery",
+    duration: "5 Nights / 6 Days",
+    highlights: "Elephant Orphanage, Temple of Tooth, Tea plantations",
+    image: "/kanyakumari-sunrise.png",
+    description:
+      "Discover Sri Lanka's cultural treasures, from ancient temples and tea plantations to golden beaches and wildlife encounters.",
+    itinerary: [
       "Day 1: Arrival in Colombo – Transfer to Kandy via Pinnawala Elephant Orphanage",
       "Day 2: Kandy exploration – Temple of Tooth, Botanical Gardens & cultural show",
       "Day 3: Kandy to Nuwara Eliya – Tea factory visit & city tour",
       "Day 4: Nuwara Eliya to Bentota – Beach relaxation",
       "Day 5: Bentota exploration – Madhu River boat ride & turtle hatchery",
-      "Day 6: Bentota to Colombo – City tour & airport departure"
-    ]
+      "Day 6: Bentota to Colombo – City tour & airport departure",
+    ],
   },
   {
-    "id": 6,
-    "title": "South India Temple Pilgrimage",
-    "duration": "14 Nights / 15 Days",
-    "highlights": "9 Navagraha temples, 6 Arupadai Veedu, Major Shiva temples",
-    "image": "/South India Temple Pilgrimage.jpg",
-    "description": "A spiritual pilgrimage covering the most sacred temples of Tamil Nadu, including all Navagraha temples and Arupadai Veedu Murugan shrines.",
-    "itinerary": [
+    id: 6,
+    title: "South India Temple Pilgrimage",
+    duration: "14 Nights / 15 Days",
+    highlights: "9 Navagraha temples, 6 Arupadai Veedu, Major Shiva temples",
+    image: "/South India Temple Pilgrimage.jpg",
+    description:
+      "A spiritual pilgrimage covering the most sacred temples of Tamil Nadu, including all Navagraha temples and Arupadai Veedu Murugan shrines.",
+    itinerary: [
       "Day 1: Arrival in Trichy – Temple visits",
       "Day 2: Trichy to Rameswaram – Temple visits en route",
       "Day 3: Rameswaram to Kanyakumari – Ramanathaswamy temple & bathing",
@@ -188,17 +197,18 @@ export const allPackages: Package[] =[
       "Day 12: Kanchipuram to Tirupati – Tirutani Murugan temple",
       "Day 13: Tirupati to Chennai – Sri Kalahasti temple",
       "Day 14: Chennai leisure day – Shopping",
-      "Day 15: Chennai airport departure"
-    ]
+      "Day 15: Chennai airport departure",
+    ],
   },
   {
-    "id": 7,
-    "title": "Karnataka Spiritual Circuit",
-    "duration": "8 Nights / 9 Days",
-    "highlights": "Shravanabelagola, Sringeri, Murudeshwar, Mysore Palace",
-    "image": "/mysore-palace-illuminated-at-night--grand-royal-in.jpg",
-    "description": "A spiritual journey through Karnataka's most revered temples and monasteries, combined with coastal beauty and royal heritage.",
-    "itinerary": [
+    id: 7,
+    title: "Karnataka Spiritual Circuit",
+    duration: "8 Nights / 9 Days",
+    highlights: "Shravanabelagola, Sringeri, Murudeshwar, Mysore Palace",
+    image: "/mysore-palace-illuminated-at-night--grand-royal-in.jpg",
+    description:
+      "A spiritual journey through Karnataka's most revered temples and monasteries, combined with coastal beauty and royal heritage.",
+    itinerary: [
       "Day 1: Arrival in Bangalore – Transfer to hotel",
       "Day 2: Bangalore to Hassan – Shravanabelagola & Belur/Halebid temples",
       "Day 3: Hassan to Kollur – Sringeri Sharada Peetham & Mookambika temple",
@@ -208,17 +218,18 @@ export const allPackages: Package[] =[
       "Day 7: Mangalore to Madikere – Dharmasthala & Subramanya temples",
       "Day 8: Madikere to Mysore – Tibetan Monastery & Maharaja Palace",
       "Day 9: Mysore to Bangalore – Chamundeshwari temple",
-      "Day 10: Bangalore airport departure"
-    ]
+      "Day 10: Bangalore airport departure",
+    ],
   },
   {
-    "id": 8,
-    "title": "Tamil Nadu with Tirupathi",
-    "duration": "9 Nights / 10 Days",
-    "highlights": "Meenakshi Temple, Palani Murugan, Tirupati Balaji",
-    "image": "/tamil Nadu with Tirupathi.jpg",
-    "description": "A condensed pilgrimage covering major Tamil Nadu temples culminating with a visit to the sacred Tirupati Venkateswara temple.",
-    "itinerary": [
+    id: 8,
+    title: "Tamil Nadu with Tirupathi",
+    duration: "9 Nights / 10 Days",
+    highlights: "Meenakshi Temple, Palani Murugan, Tirupati Balaji",
+    image: "/Tamil Nadu with Tirupathi.jpg",
+    description:
+      "A condensed pilgrimage covering major Tamil Nadu temples culminating with a visit to the sacred Tirupati Venkateswara temple.",
+    itinerary: [
       "Day 1: Arrival in Trichy – Temple visits",
       "Day 2: Trichy to Rameswaram – Temple visits en route",
       "Day 3: Rameswaram to Madurai – Ramanathaswamy temple & Meenakshi temple",
@@ -228,33 +239,35 @@ export const allPackages: Package[] =[
       "Day 7: Tiruvannamalai to Tirupati – Ekambaranathar temple en route",
       "Day 8: Tirupati to Chennai – Tirutani Murugan temple",
       "Day 9: Chennai exploration – Temple visits & shopping",
-      "Day 10: Chennai airport departure"
-    ]
+      "Day 10: Chennai airport departure",
+    ],
   },
   {
-    "id": 9,
-    "title": "Maharashtra Pilgrimage Tour",
-    "duration": "5 Nights / 6 Days",
-    "highlights": "Shirdi Sai Baba, Trimbakeshwar, Bhimashankar, Mumbai",
-    "image": "/Maharashtra Pilgrimage Tour.jpg",
-    "description": "A spiritual tour of Maharashtra covering Sai Baba's shrine, important Jyotirlingas, vineyards, and Mumbai's landmarks.",
-    "itinerary": [
+    id: 9,
+    title: "Maharashtra Pilgrimage Tour",
+    duration: "5 Nights / 6 Days",
+    highlights: "Shirdi Sai Baba, Trimbakeshwar, Bhimashankar, Mumbai",
+    image: "/Maharashtra Pilgrimage Tour.jpg",
+    description:
+      "A spiritual tour of Maharashtra covering Sai Baba's shrine, important Jyotirlingas, vineyards, and Mumbai's landmarks.",
+    itinerary: [
       "Day 1: Arrival in Mumbai – Transfer to hotel",
       "Day 2: Mumbai to Shirdi – Sai Baba temple darshan",
       "Day 3: Shirdi exploration – Shani Shingnapur temple visit",
       "Day 4: Shirdi to Nashik – Sula Vineyards & Trimbakeshwar temple",
       "Day 5: Nashik to Mumbai – Bhimashankar Jyotirlinga en route",
-      "Day 6: Mumbai exploration & airport departure"
-    ]
+      "Day 6: Mumbai exploration & airport departure",
+    ],
   },
   {
-    "id": 13,
-    "title": "Three States Explorer",
-    "duration": "9 Nights / 10 Days",
-    "highlights": "Mysore Palace, Ooty toy train, Cochin backwaters",
-    "image": "/ooty-train.png",
-    "description": "A diverse tour covering the highlights of Tamil Nadu, Karnataka, and Kerala – from palaces and hill stations to backwaters and temples.",
-    "itinerary": [
+    id: 13,
+    title: "Three States Explorer",
+    duration: "9 Nights / 10 Days",
+    highlights: "Mysore Palace, Ooty toy train, Cochin backwaters",
+    image: "/ooty-train.png",
+    description:
+      "A diverse tour covering the highlights of Tamil Nadu, Karnataka, and Kerala – from palaces and hill stations to backwaters and temples.",
+    itinerary: [
       "Day 1: Arrival in Chennai – Sightseeing",
       "Day 2: Chennai to Bangalore – Transfer & church visits",
       "Day 3: Bangalore to Mysore – Palace & Brindavan Gardens",
@@ -264,17 +277,18 @@ export const allPackages: Package[] =[
       "Day 7: Alleppey to Kovalam – Padmanabhaswamy temple",
       "Day 8: Kovalam to Madurai – Meenakshi & other temples",
       "Day 9: Madurai to Trichy – Transfer & free time",
-      "Day 10: Trichy temple visits & airport departure"
-    ]
+      "Day 10: Trichy temple visits & airport departure",
+    ],
   },
   {
-    "id": 14,
-    "title": "Tamil Nadu & Varanasi Spiritual",
-    "duration": "14 Nights / 15 Days",
-    "highlights": "Varanasi ghats, Bodh Gaya, Major Tamil temples",
-    "image": "/kanyakumari-sunrise.png",
-    "description": "A unique spiritual journey combining the sacred sites of North India (Varanasi, Bodh Gaya) with the temple wonders of Tamil Nadu.",
-    "itinerary": [
+    id: 14,
+    title: "Tamil Nadu & Varanasi Spiritual",
+    duration: "14 Nights / 15 Days",
+    highlights: "Varanasi ghats, Bodh Gaya, Major Tamil temples",
+    image: "/kanyakumari-sunrise.png",
+    description:
+      "A unique spiritual journey combining the sacred sites of North India (Varanasi, Bodh Gaya) with the temple wonders of Tamil Nadu.",
+    itinerary: [
       "Day 1: Arrival in Chennai – Fly to Varanasi",
       "Day 2: Varanasi exploration – Ghats, temples & Ganga Aarti",
       "Day 3: Varanasi to Ayodhya – Ram Temple visit",
@@ -289,17 +303,18 @@ export const allPackages: Package[] =[
       "Day 12: Trichy to Tiruvannamalai – Arunachaleshwarar temple",
       "Day 13: Tiruvannamalai to Chennai – Temple visits en route",
       "Day 14: Chennai leisure day – Shopping",
-      "Day 15: Chennai airport departure"
-    ]
+      "Day 15: Chennai airport departure",
+    ],
   },
   {
-    "id": 15,
-    "title": "Tamil Nadu Shiva Temple Trail",
-    "duration": "14 Nights / 15 Days",
-    "highlights": "Pancha Bhoota Stalam, Major Shiva temples",
-    "image": "/hampi-ancient-temple-ruins-stone-chariot-karnataka.jpg",
-    "description": "An in-depth pilgrimage to the most important Shiva temples across Tamil Nadu, covering various manifestations and architectural styles.",
-    "itinerary": [
+    id: 15,
+    title: "Tamil Nadu Shiva Temple Trail",
+    duration: "14 Nights / 15 Days",
+    highlights: "Pancha Bhoota Stalam, Major Shiva temples",
+    image: "/hampi-ancient-temple-ruins-stone-chariot-karnataka.jpg",
+    description:
+      "An in-depth pilgrimage to the most important Shiva temples across Tamil Nadu, covering various manifestations and architectural styles.",
+    itinerary: [
       "Day 1: Arrival in Chennai – Transfer to hotel",
       "Day 2: Chennai to Tiruvannamalai – Temples en route",
       "Day 3: Tiruvannamalai exploration – Arunachaleshwarar temple",
@@ -314,17 +329,18 @@ export const allPackages: Package[] =[
       "Day 12: Courtralam to Madurai – Meenakshi temple",
       "Day 13: Madurai to Trichy – Major temple visits",
       "Day 14: Trichy to Chennai – Temple visits en route",
-      "Day 15: Chennai temple visits & airport departure"
-    ]
+      "Day 15: Chennai temple visits & airport departure",
+    ],
   },
   {
-    "id": 16,
-    "title": "Tamil Nadu Amman Temple Special",
-    "duration": "7 Nights / 8 Days",
-    "highlights": "Kamakshi Amman, Mariamman temples",
-    "image": "/madurai-meenakshi-temple-with-colorful-gopuram-tow.jpg",
-    "description": "A unique pilgrimage focusing on the worship of Goddess (Amman) temples across Tamil Nadu, covering various forms of the divine feminine.",
-    "itinerary": [
+    id: 16,
+    title: "Tamil Nadu Amman Temple Special",
+    duration: "7 Nights / 8 Days",
+    highlights: "Kamakshi Amman, Mariamman temples",
+    image: "/madurai-meenakshi-temple-with-colorful-gopuram-tow.jpg",
+    description:
+      "A unique pilgrimage focusing on the worship of Goddess (Amman) temples across Tamil Nadu, covering various forms of the divine feminine.",
+    itinerary: [
       "Day 1: Arrival in Chennai – Transfer to Kanchipuram",
       "Day 2: Kanchipuram to Tiruvannamalai – Amman temple visits",
       "Day 3: Tiruvannamalai to Karur – Mariamman temple visits",
@@ -332,17 +348,18 @@ export const allPackages: Package[] =[
       "Day 5: Palani to Trichy – Temple visits",
       "Day 6: Trichy to Chennai – Major Amman temple visits en route",
       "Day 7: Chennai exploration – Karumariamman temple & shopping",
-      "Day 8: Chennai airport departure"
-    ]
+      "Day 8: Chennai airport departure",
+    ],
   },
   {
-    "id": 17,
-    "title": "Classic Kerala Itinerary (Winter)",
-    "duration": "10 Nights / 11 Days",
-    "highlights": "Athirapally falls, Houseboat cruise, Kovalam beach",
-    "image": "/goa-beach-sunset-palm-trees-colorful-fishing-boats.jpg",
-    "description": "A detailed Kerala tour perfect for winter travel, covering waterfalls, wildlife, backwaters, beaches, and cultural experiences.",
-    "itinerary": [
+    id: 17,
+    title: "Classic Kerala Itinerary (Winter)",
+    duration: "10 Nights / 11 Days",
+    highlights: "Athirapally falls, Houseboat cruise, Kovalam beach",
+    image: "/goa-beach-sunset-palm-trees-colorful-fishing-boats.jpg",
+    description:
+      "A detailed Kerala tour perfect for winter travel, covering waterfalls, wildlife, backwaters, beaches, and cultural experiences.",
+    itinerary: [
       "Day 1: Arrival in Cochin – Transfer to hotel",
       "Day 2: Cochin to Munnar – Visit Athirapally waterfalls",
       "Day 3: Munnar sightseeing – Eravikulam National Park & Top Station",
@@ -353,9 +370,9 @@ export const allPackages: Package[] =[
       "Day 8: Alleppey to Kovalam – Beach relaxation",
       "Day 9: Kovalam to Trivandrum – Padmanabhaswamy Temple visit",
       "Day 10: Kovalam to Cochin – City tour & cultural dance show",
-      "Day 11: Cochin airport departure"
-    ]
-  }
+      "Day 11: Cochin airport departure",
+    ],
+  },
 ];
 
 // Get featured packages (first 3)
@@ -370,5 +387,5 @@ export const getAllPackages = (): Package[] => {
 
 // Get package by ID
 export const getPackageById = (id: number): Package | undefined => {
-  return allPackages.find(pkg => pkg.id === id);
+  return allPackages.find((pkg) => pkg.id === id);
 };
