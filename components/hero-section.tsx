@@ -6,12 +6,15 @@ import Image from "next/image";
 import { Navigation } from "./navigation";
 
 export function HeroSection() {
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
     e.preventDefault();
-    
+
     const targetId = href.replace("#", "");
     const element = document.getElementById(targetId);
-    
+
     if (element) {
       const offset = 80;
       const elementPosition = element.getBoundingClientRect().top;
@@ -19,7 +22,7 @@ export function HeroSection() {
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
   };
@@ -67,11 +70,11 @@ export function HeroSection() {
             className="font-serif text-4xl md:text-7xl text-[#1e3a5f] leading-tight mb-0"
           >
             <b>
-              <span className="italic">Discover the Colors</span>
+              <span className="italic">Dream to Travel</span>
             </b>
             <br />
             <b>
-              <span className="italic">of A Timeless Nation</span>
+              <span className="italic">Travel to Dream </span>
             </b>
           </motion.h1>
 
