@@ -8,68 +8,227 @@ import { Play, Eye, X, ChevronLeft, ChevronRight } from "lucide-react";
 const galleryItems = [
   {
     id: 1,
-    title: "Rajasthan Forts",
-    image: "/rajasthan-fort-amber-palace-golden-sunset-ancient-.jpg",
+    title: "Happy Customer",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.33 PM.jpeg",
     type: "image",
   },
   {
     id: 2,
-    title: "Kerala Backwaters",
-    image: "/kerala-backwaters-houseboat-palm-trees-serene-wate.jpg",
-    type: "video",
+    title: "Satisfied Traveler",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.33 PM (1).jpeg",
+    type: "image",
     featured: true,
   },
   {
     id: 3,
-    title: "Goa Beaches",
-    image: "/goa-beach-sunset-palm-trees-colorful-fishing-boats.jpg",
+    title: "Amazing Experience",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.34 PM (1).jpeg",
     type: "image",
   },
   {
     id: 4,
-    title: "Hampi Temple",
-    image: "/hampi-ancient-temple-ruins-stone-chariot-karnataka.jpg",
+    title: "Great Service",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.34 PM (2).jpeg",
     type: "image",
   },
   {
     id: 5,
-    title: "Kochi Fishing Nets",
-    image: "/chinese-fishing-nets-kochi-sunset-kerala-tradition.jpg",
+    title: "Wonderful Journey",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.35 PM.jpeg",
     type: "image",
   },
   {
     id: 6,
-    title: "Puducherry French Quarter",
-    image: "/pondicherry-french-colony-colorful-colonial-buildi.jpg",
+    title: "Perfect Holiday",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.36 PM.jpeg",
     type: "image",
   },
   {
     id: 7,
-    title: "Munnar Tea Gardens",
-    image: "/munnar-tea.png",
+    title: "Memorable Trip",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.36 PM (1).jpeg",
     type: "image",
   },
   {
     id: 8,
-    title: "Mysore Palace",
-    image: "/mysore-palace-illuminated-at-night--grand-royal-in.jpg",
+    title: "Outstanding Tour",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.37 PM (2).jpeg",
     type: "image",
   },
   {
     id: 9,
-    title: "Alleppey Houseboat",
-    image: "/kerala-houseboat-on-backwaters-with-palm-trees--se.jpg",
-    type: "image"
-  }
+    title: "Fantastic Experience",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.37 PM (3).jpeg",
+    type: "image",
+  },
+  {
+    id: 10,
+    title: "Unforgettable Adventure",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.38 PM.jpeg",
+    type: "image",
+  },
+  {
+    id: 11,
+    title: "Excellent Service",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.38 PM (1).jpeg",
+    type: "image",
+  },
+  {
+    id: 12,
+    title: "Dream Vacation",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.39 PM.jpeg",
+    type: "image",
+  },
+  {
+    id: 13,
+    title: "Top Quality Tour",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.39 PM (1).jpeg",
+    type: "image",
+  },
+  {
+    id: 14,
+    title: "Best Travel Experience",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.40 PM.jpeg",
+    type: "image",
+  },
+  {
+    id: 15,
+    title: "Impressive Journey",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.40 PM (1).jpeg",
+    type: "image",
+  },
+  {
+    id: 16,
+    title: "Great Memories",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.40 PM (2).jpeg",
+    type: "image",
+  },
+  {
+    id: 17,
+    title: "Perfect Getaway",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.41 PM.jpeg",
+    type: "image",
+  },
+  {
+    id: 18,
+    title: "Wonderful Time",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.41 PM (1).jpeg",
+    type: "image",
+  },
+  {
+    id: 19,
+    title: "Spectacular Tour",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.41 PM (2).jpeg",
+    type: "image",
+  },
+  {
+    id: 21,
+    title: "Excellent Experience",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.42 PM (1).jpeg",
+    type: "image",
+  },
+  {
+    id: 22,
+    title: "Amazing Holiday",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.42 PM (2).jpeg",
+    type: "image",
+  },
+  {
+    id: 23,
+    title: "Great Trip",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.43 PM (1).jpeg",
+    type: "image",
+  },
+  {
+    id: 24,
+    title: "Outstanding Service",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.44 PM (2).jpeg",
+    type: "image",
+  },
+  {
+    id: 25,
+    title: "Perfect Vacation",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.45 PM.jpeg",
+    type: "image",
+  },
+  {
+    id: 26,
+    title: "Unbeatable Experience",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.45 PM (1).jpeg",
+    type: "image",
+  },
+  {
+    id: 27,
+    title: "Incredible Journey",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.45 PM (2).jpeg",
+    type: "image",
+  },
+  {
+    id: 28,
+    title: "Memorable Holiday",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.46 PM.jpeg",
+    type: "image",
+  },
+  {
+    id: 29,
+    title: "Superb Tour",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.46 PM (1).jpeg",
+    type: "image",
+  },
+  {
+    id: 30,
+    title: "Outstanding Trip",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.46 PM (2).jpeg",
+    type: "image",
+  },
+  {
+    id: 31,
+    title: "Exceptional Service",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.46 PM (3).jpeg",
+    type: "image",
+  },
+  {
+    id: 32,
+    title: "Wonderful Vacation",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.47 PM.jpeg",
+    type: "image",
+  },
+  {
+    id: 33,
+    title: "Best Holiday Ever",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.47 PM (1).jpeg",
+    type: "image",
+  },
+  {
+    id: 34,
+    title: "Great Adventure",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.47 PM (2).jpeg",
+    type: "image",
+  },
+  {
+    id: 35,
+    title: "Perfect Experience",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.48 PM.jpeg",
+    type: "image",
+  },
+  {
+    id: 36,
+    title: "Fantastic Journey",
+    image: "/testimonials/WhatsApp Image 2026-02-01 at 1.46.48 PM (2).jpeg",
+    type: "image",
+  },
 ];
 
 export function GallerySection() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const [visibleCount, setVisibleCount] = useState(9); // Initially show 9 images
 
   const handlePrevious = () => {
     if (selectedImage !== null) {
       setSelectedImage(
-        selectedImage === 0 ? galleryItems.length - 1 : selectedImage - 1
+        selectedImage <= 0
+          ? Math.min(visibleCount, galleryItems.length) - 1
+          : selectedImage - 1
       );
     }
   };
@@ -77,7 +236,9 @@ export function GallerySection() {
   const handleNext = () => {
     if (selectedImage !== null) {
       setSelectedImage(
-        selectedImage === galleryItems.length - 1 ? 0 : selectedImage + 1
+        selectedImage >= Math.min(visibleCount, galleryItems.length) - 1
+          ? 0
+          : selectedImage + 1
       );
     }
   };
@@ -102,99 +263,96 @@ export function GallerySection() {
         >
           <h2 className="font-serif text-4xl md:text-5xl text-[#1e3a5f] mb-4">
             <span className="italic text-[#c9a227]">Gallery</span>
-            <span> / Video Showcase</span>
+            <span> / Our Happy Customers</span>
           </h2>
-          <p className="text-[#1e3a5f]/70 text-lg max-w-2xl mx-auto">
-            Explore the vibrant sights and sounds of South India through our
-            curated visual collection.
-          </p>
         </motion.div>
 
         {/* Gallery Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {/* Featured Video - Spans 2 columns */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="col-span-2 row-span-2 relative group cursor-pointer rounded-2xl overflow-hidden"
-            onClick={() => setSelectedImage(1)}
-          >
-            <Image
-              src={galleryItems[1].image || "/placeholder.svg"}
-              alt={galleryItems[1].title}
-              fill
-              className="object-cover transition-transform duration-500 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-              <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center">
-                <Play
-                  className="w-8 h-8 text-[#1e3a5f] ml-1"
-                  fill="currentColor"
+          {galleryItems.slice(0, visibleCount).map((item, index) => {
+            // Define grid classes based on position
+            let gridClass =
+              "relative group cursor-pointer rounded-2xl overflow-hidden";
+
+            // Check if this is the featured item
+            const isFeatured = item.featured;
+
+            // Position-based sizing
+            if (index === 1 && isFeatured) {
+              // Second item is featured and should span 2x2 grid cells
+              gridClass += " col-span-2 row-span-2 md:h-[420px]";
+            } else if (index === 0 || index === 2) {
+              // First and third items should be taller
+              gridClass += " h-40";
+            } else {
+              // Other items should be shorter
+              gridClass += " h-32";
+            }
+
+            // Calculate the actual index in the full galleryItems array
+            const actualIndex = index;
+
+            return (
+              <motion.div
+                key={item.id}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.05 }}
+                className={gridClass}
+                onClick={() => setSelectedImage(actualIndex)}
+              >
+                <Image
+                  src={item.image || "/placeholder.svg"}
+                  alt={item.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-              </div>
-            </div>
-            <div className="absolute bottom-4 left-4 text-white">
-              <h3 className="font-bold text-lg">{galleryItems[1].title}</h3>
-            </div>
-            {/* Carousel dots */}
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
-              <div className="w-8 h-1 bg-[#c9a227] rounded-full" />
-              <div className="w-8 h-1 bg-white/50 rounded-full" />
-            </div>
-          </motion.div>
-
-          {/* Side images */}
-          {[galleryItems[0], galleryItems[2]].map((item, index) => (
-            <motion.div
-              key={item.id}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative group cursor-pointer rounded-2xl overflow-hidden h-40"
-              onClick={() => setSelectedImage(item.id - 1)}
-            >
-              <Image
-                src={item.image || "/placeholder.svg"}
-                alt={item.title}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between text-white text-sm">
-                <span>{item.title}</span>
-                <Eye className="w-4 h-4" />
-              </div>
-            </motion.div>
-          ))}
-
-          {/* Bottom row images */}
-          {galleryItems.slice(3, 11).map((item, index) => (
-            <motion.div
-              key={item.id}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.05 }}
-              className="relative group cursor-pointer rounded-2xl overflow-hidden h-32"
-              onClick={() => setSelectedImage(item.id - 1)}
-            >
-              <Image
-                src={item.image || "/placeholder.svg"}
-                alt={item.title}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between text-white text-xs">
-                <span className="truncate">{item.title}</span>
-                <Eye className="w-3 h-3 flex-shrink-0" />
-              </div>
-            </motion.div>
-          ))}
+                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between text-white text-xs">
+                  <span className="truncate">{item.title}</span>
+                  <Eye className="w-3 h-3 flex-shrink-0" />
+                </div>
+                {isFeatured && index === 1 && (
+                  <>
+                    <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                      <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center">
+                        <Play
+                          className="w-8 h-8 text-[#1e3a5f] ml-1"
+                          fill="currentColor"
+                        />
+                      </div>
+                    </div>
+                    <div className="absolute bottom-4 left-4 text-white">
+                      <h3 className="font-bold text-lg">{item.title}</h3>
+                    </div>
+                    {/* Carousel dots */}
+                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+                      <div className="w-8 h-1 bg-[#c9a227] rounded-full" />
+                      <div className="w-8 h-1 bg-white/50 rounded-full" />
+                    </div>
+                  </>
+                )}
+              </motion.div>
+            );
+          })}
         </div>
+
+        {/* Load More Button */}
+        {visibleCount < galleryItems.length && (
+          <div className="flex justify-center mt-8">
+            <button
+              className="px-6 py-3 bg-[#c9a227] text-white rounded-lg hover:bg-[#b08d1d] transition-colors font-medium"
+              onClick={() =>
+                setVisibleCount((prev) =>
+                  Math.min(prev + 9, galleryItems.length)
+                )
+              }
+            >
+              Load More
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Lightbox Modal */}
@@ -239,15 +397,25 @@ export function GallerySection() {
               onClick={(e) => e.stopPropagation()}
             >
               <Image
-                src={galleryItems[selectedImage].image || "/placeholder.svg"}
-                alt={galleryItems[selectedImage].title}
+                src={
+                  selectedImage !== null
+                    ? galleryItems[selectedImage].image || "/placeholder.svg"
+                    : "/placeholder.svg"
+                }
+                alt={
+                  selectedImage !== null
+                    ? galleryItems[selectedImage].title
+                    : "Selected image"
+                }
                 width={1200}
                 height={800}
                 className="object-contain w-full h-full rounded-lg"
               />
               <div className="absolute bottom-4 left-4 text-white bg-black/50 px-4 py-2 rounded-lg">
                 <h3 className="font-bold">
-                  {galleryItems[selectedImage].title}
+                  {selectedImage !== null
+                    ? galleryItems[selectedImage].title
+                    : "Selected image"}
                 </h3>
               </div>
             </motion.div>
