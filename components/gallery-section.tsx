@@ -107,8 +107,8 @@ export function GallerySection() {
           </h2>
         </motion.div>
 
-        {/* Gallery Grid - Exactly 9 images in homogeneous layout */}
-        <div className="grid grid-cols-3 gap-4">
+        {/* Gallery Grid - Responsive layout */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
           {galleryItems.map((item, index) => {
             // Define grid classes for homogeneous layout
             let gridClass =
@@ -128,6 +128,8 @@ export function GallerySection() {
                   src={item.image || "/placeholder.svg"}
                   alt={item.title}
                   fill
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                  quality={80}
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -181,6 +183,8 @@ export function GallerySection() {
                 }
                 width={1200}
                 height={800}
+                quality={90}
+                sizes="100vw"
                 className="object-contain w-full h-full rounded-lg"
               />
               <div className="absolute bottom-4 left-4 text-white bg-black/50 px-4 py-2 rounded-lg">

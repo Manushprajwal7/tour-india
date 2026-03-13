@@ -55,6 +55,8 @@ export function FeaturedPackages() {
                   src={packages[0].image || "/placeholder.svg"}
                   alt={packages[0].title}
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  quality={85}
                   className="object-cover"
                 />
               </div>
@@ -92,6 +94,8 @@ export function FeaturedPackages() {
                   src={packages[1].image || "/placeholder.svg"}
                   alt={packages[1].title}
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  quality={85}
                   className="object-cover"
                 />
               </div>
@@ -134,6 +138,8 @@ export function FeaturedPackages() {
                   src={packages[2].image || "/placeholder.svg"}
                   alt={packages[2].title}
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  quality={85}
                   className="object-cover"
                 />
               </div>

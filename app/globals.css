@@ -142,3 +142,104 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #b8922a;
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   Hero Scroll-Driven Frame Animation
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Outer wrapper: creates the scrollable area for the animation */
+.hero-scroll-section {
+  position: relative;
+  width: 100%;
+  /* height is set inline via the component (300vh) */
+}
+
+/* Sticky inner container: stays pinned to viewport while scrolling */
+.hero-sticky-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Canvas: fills the sticky container, sits behind overlays */
+.hero-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+}
+
+/* Content overlay: logo, text, and CTA buttons over the canvas */
+.hero-content-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.05s linear;
+  /* No background — let the canvas frame show through clearly */
+  background: transparent;
+}
+
+/* ── Loading overlay ── */
+.hero-loading {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f4e8;
+}
+
+.hero-loading-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Animated spinner */
+.hero-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #e5d9c3;
+  border-top-color: #c9a227;
+  border-radius: 50%;
+  animation: hero-spin 0.8s linear infinite;
+}
+
+@keyframes hero-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-loading-text {
+  font-size: 0.95rem;
+  color: #1e3a5f;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Progress bar */
+.hero-progress-bar {
+  width: 200px;
+  height: 4px;
+  background: #e5d9c3;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.hero-progress-fill {
+  height: 100%;
+  background: linear-gradient(to right, #c9a227, #d4af37);
+  border-radius: 2px;
+  transition: width 0.2s ease-out;
+}

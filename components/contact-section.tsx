@@ -51,7 +51,7 @@ export function ContactSection({ initialPackageName = "" }: { initialPackageName
   return (
     <section
       id="contact"
-      className="w-full py-20 relative overflow-hidden -mt-20 min-h-screen isolate bg-[#f8f4e8] md:bg-[url('/contact.png')] md:bg-[length:100%_100%] md:bg-center md:bg-no-repeat md:bg-scroll"
+      className="w-full py-20 relative overflow-hidden -mt-20 min-h-screen isolate bg-[url('/contact.png')] bg-cover bg-center bg-no-repeat md:bg-[length:100%_100%] md:bg-scroll"
       style={{
         width: "100vw",
         marginLeft: "calc(-50vw + 50%)",

@@ -63,7 +63,7 @@ export function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="w-full block py-20 relative overflow-hidden -mt-20 min-h-screen isolate bg-[#f8f4e8] md:bg-[url('/background.png')] md:bg-[length:100%_100%] md:bg-center md:bg-no-repeat"
+      className="w-full block py-20 relative overflow-hidden -mt-20 min-h-screen isolate bg-[url('/mobile_view.png')] bg-cover bg-center bg-no-repeat md:bg-[url('/background.png')] md:bg-[length:100%_100%] md:bg-center md:bg-no-repeat"
       style={{
         width: "100vw",
         marginLeft: "calc(-50vw + 50%)",
@@ -173,6 +173,7 @@ export function TestimonialsSection() {
                     src={testimonial.image || "/placeholder.svg"}
                     alt={testimonial.name}
                     fill
+                    sizes="288px"
                     className="object-cover"
                   />
                 </div>
