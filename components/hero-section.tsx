@@ -7,7 +7,7 @@ import Image from "next/image";
 import { Navigation } from "./navigation";
 
 // ─── Configuration ──────────────────────────────────────────────
-const TOTAL_FRAMES = 120;
+const TOTAL_FRAMES = 96;
 const HERO_SCROLL_HEIGHT = "300vh"; // Total scroll area for the animation
 const CONTENT_FADE_END = 0.15; // Content overlay fades out over first 15% of scroll
 
@@ -16,7 +16,7 @@ const CONTENT_FADE_END = 0.15; // Content overlay fades out over first 15% of sc
  * Files are named: ezgif-frame-001.jpg … ezgif-frame-120.jpg
  */
 function framePath(index: number): string {
-  return `/hero_frames/ezgif-frame-${String(index).padStart(3, "0")}.jpg`;
+  return `/new_hero_frames/ezgif-frame-${String(index).padStart(3, "0")}.jpg`;
 }
 
 // ─── Component ──────────────────────────────────────────────────
