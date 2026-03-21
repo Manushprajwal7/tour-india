@@ -3,8 +3,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { Play, Eye, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { Play, Eye, X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut } from "lucide-react";
 import Link from "next/link";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 // Static list of first 9 testimonial images for main gallery
 const galleryItems = [
@@ -60,6 +61,18 @@ const galleryItems = [
     id: 9,
     title: "Happy Customer 9",
     image: "/testimonials/WhatsApp Image 2026-02-01 at 1.13.11 PM.jpeg",
+    type: "image",
+  },
+  {
+    id: 10,
+    title: "Happy Customer 10",
+    image: "/testimonials/WhatsApp Image 2026-03-14 at 9.40.33 AM.jpeg",
+    type: "image",
+  },
+  {
+    id: 11,
+    title: "Happy Customer 11",
+    image: "/testimonials/WhatsApp Image 2026-03-14 at 9.41.20 AM.jpeg",
     type: "image",
   },
 ];
@@ -133,9 +146,8 @@ export function GallerySection() {
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between text-white text-xs">
-                  <span className="truncate">{item.title}</span>
-                  <Eye className="w-3 h-3 flex-shrink-0" />
+                <div className="absolute bottom-2 right-2 flex items-center text-white text-xs">
+                  <Eye className="w-4 h-4 flex-shrink-0" />
                 </div>
               </motion.div>
             );
@@ -160,39 +172,84 @@ export function GallerySection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+            className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4"
             onClick={() => setSelectedImage(null)}
           >
             <motion.div
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.9 }}
-              className="relative max-w-4xl max-h-[80vh] w-full"
+              className="relative w-full h-full max-h-[90vh] flex items-center justify-center"
               onClick={(e) => e.stopPropagation()}
             >
-              <Image
-                src={
-                  selectedImage !== null
-                    ? galleryItems[selectedImage].image || "/placeholder.svg"
-                    : "/placeholder.svg"
-                }
-                alt={
-                  selectedImage !== null
-                    ? galleryItems[selectedImage].title
-                    : "Selected image"
-                }
-                width={1200}
-                height={800}
-                quality={90}
-                sizes="100vw"
-                className="object-contain w-full h-full rounded-lg"
-              />
-              <div className="absolute bottom-4 left-4 text-white bg-black/50 px-4 py-2 rounded-lg">
-                <h3 className="font-bold">
-                  {selectedImage !== null
-                    ? galleryItems[selectedImage].title
-                    : "Selected image"}
-                </h3>
+              <button
+                onClick={() => setSelectedImage(null)}
+                className="absolute top-4 right-4 z-[60] text-white hover:text-[#c9a227] bg-black/50 rounded-full p-2 transition-colors"
+                aria-label="Close lightbox"
+              >
+                <X className="w-8 h-8" />
+              </button>
+              
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handlePrevious();
+                }}
+                className="absolute left-4 z-[60] text-white hover:text-[#c9a227] bg-black/50 rounded-full p-2 transition-colors"
+                style={{ top: "50%", transform: "translateY(-50%)" }}
+                aria-label="Previous image"
+              >
+                <ChevronLeft className="w-8 h-8" />
+              </button>
+
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleNext();
+                }}
+                className="absolute right-4 z-[60] text-white hover:text-[#c9a227] bg-black/50 rounded-full p-2 transition-colors"
+                style={{ top: "50%", transform: "translateY(-50%)" }}
+                aria-label="Next image"
+              >
+                <ChevronRight className="w-8 h-8" />
+              </button>
+
+              <div className="w-[90vw] md:w-[80vw] h-[80vh] flex items-center justify-center relative">
+                <TransformWrapper
+                  centerOnInit
+                  initialScale={1}
+                >
+                  {({ zoomIn, zoomOut }) => (
+                    <>
+                      <div className="absolute -top-12 md:top-4 md:right-20 flex gap-2 z-[60]">
+                        <button onClick={(e) => { e.stopPropagation(); zoomIn(); }} className="p-2 bg-black/50 rounded-full text-white hover:text-[#c9a227]" aria-label="Zoom in">
+                          <ZoomIn className="w-6 h-6" />
+                        </button>
+                        <button onClick={(e) => { e.stopPropagation(); zoomOut(); }} className="p-2 bg-black/50 rounded-full text-white hover:text-[#c9a227]" aria-label="Zoom out">
+                          <ZoomOut className="w-6 h-6" />
+                        </button>
+                      </div>
+                      <TransformComponent wrapperStyle={{ width: "100%", height: "100%" }} contentStyle={{ width: "100%", height: "100%" }}>
+                        <Image
+                          src={
+                            selectedImage !== null
+                              ? galleryItems[selectedImage].image || "/placeholder.svg"
+                              : "/placeholder.svg"
+                          }
+                          alt={
+                            selectedImage !== null
+                              ? galleryItems[selectedImage].title
+                              : "Selected image"
+                          }
+                          fill
+                          sizes="100vw"
+                          quality={100}
+                          className="object-contain"
+                        />
+                      </TransformComponent>
+                    </>
+                  )}
+                </TransformWrapper>
               </div>
             </motion.div>
           </motion.div>

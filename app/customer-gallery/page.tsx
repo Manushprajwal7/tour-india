@@ -3,8 +3,9 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Eye, ChevronLeft } from "lucide-react";
+import { Eye, ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut } from "lucide-react";
 import Link from "next/link";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 // Static list of all testimonial images (111 total) with descriptive titles
 const allImages = [
@@ -674,6 +675,18 @@ const allImages = [
     image: "/testimonials/WhatsApp Image 2026-02-01 at 1.59.35 PM.jpeg",
     type: "image",
   },
+  {
+    id: 112,
+    title: "Happy Customer 112",
+    image: "/testimonials/WhatsApp Image 2026-03-14 at 9.40.33 AM.jpeg",
+    type: "image",
+  },
+  {
+    id: 113,
+    title: "Happy Customer 113",
+    image: "/testimonials/WhatsApp Image 2026-03-14 at 9.41.20 AM.jpeg",
+    type: "image",
+  },
 ];
 
 export default function CustomerGalleryPage() {
@@ -773,21 +786,15 @@ export default function CustomerGalleryPage() {
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between text-white text-xs">
-                      <span className="truncate">{item.title}</span>
-                      {!isFeatured && <Eye className="w-3 h-3 flex-shrink-0" />}
+                    <div className="absolute bottom-2 right-2 flex items-center text-white text-xs z-20">
+                      {!isFeatured && <Eye className="w-4 h-4 flex-shrink-0" />}
                     </div>
                     {isFeatured && (
-                      <>
-                        <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                          <div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center">
-                            <Eye className="w-6 h-6 text-[#1e3a5f]" />
-                          </div>
+                      <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                        <div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center">
+                          <Eye className="w-6 h-6 text-[#1e3a5f]" />
                         </div>
-                        <div className="absolute bottom-4 left-4 text-white">
-                          <h3 className="font-bold text-sm">{item.title}</h3>
-                        </div>
-                      </>
+                      </div>
                     )}
                   </motion.div>
                 );
@@ -799,80 +806,67 @@ export default function CustomerGalleryPage() {
 
       {/* Lightbox Modal */}
       {selectedImage !== null && (
-        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4">
           <button
-            onClick={() => setSelectedImage(null)}
-            className="absolute top-4 right-4 text-white hover:text-[#c9a227] transition-colors z-10"
+             onClick={() => setSelectedImage(null)}
+             className="absolute top-4 right-4 z-[60] text-white hover:text-[#c9a227] bg-black/50 rounded-full p-2 transition-colors"
+             aria-label="Close lightbox"
           >
-            <svg
-              className="w-8 h-8"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
+             <X className="w-8 h-8" />
           </button>
+          
           <button
             onClick={(e) => {
               e.stopPropagation();
               handlePrevious();
             }}
-            className="absolute left-4 text-white hover:text-[#c9a227] transition-colors z-10"
+            className="absolute left-4 z-[60] text-white hover:text-[#c9a227] bg-black/50 rounded-full p-2 transition-colors"
+            style={{ top: "50%", transform: "translateY(-50%)" }}
+            aria-label="Previous image"
           >
-            <svg
-              className="w-10 h-10"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
+            <ChevronLeft className="w-8 h-8" />
           </button>
+
           <button
             onClick={(e) => {
               e.stopPropagation();
               handleNext();
             }}
-            className="absolute right-4 text-white hover:text-[#c9a227] transition-colors z-10"
+            className="absolute right-4 z-[60] text-white hover:text-[#c9a227] bg-black/50 rounded-full p-2 transition-colors"
+            style={{ top: "50%", transform: "translateY(-50%)" }}
+            aria-label="Next image"
           >
-            <svg
-              className="w-10 h-10"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
+            <ChevronRight className="w-8 h-8" />
           </button>
-          <div className="relative max-w-4xl max-h-[80vh] w-full">
-            <Image
-              src={allImages[selectedImage]?.image || "/placeholder.svg"}
-              alt={allImages[selectedImage]?.title || "Selected image"}
-              width={1200}
-              height={800}
-              className="object-contain w-full h-full rounded-lg"
-            />
-            <div className="absolute bottom-4 left-4 text-white bg-black/50 px-4 py-2 rounded-lg">
-              <h3 className="font-bold">
-                {allImages[selectedImage]?.title || "Selected image"}
-              </h3>
-            </div>
+
+          <div className="w-[90vw] md:w-[80vw] h-[80vh] flex items-center justify-center relative">
+            <TransformWrapper
+              centerOnInit
+              initialScale={1}
+            >
+              {({ zoomIn, zoomOut }) => (
+                <>
+                  <div className="absolute -top-12 md:top-4 md:right-20 flex gap-2 z-[60]">
+                    <button onClick={(e) => { e.stopPropagation(); zoomIn(); }} className="p-2 bg-black/50 rounded-full text-white hover:text-[#c9a227]" aria-label="Zoom in">
+                      <ZoomIn className="w-6 h-6" />
+                    </button>
+                    <button onClick={(e) => { e.stopPropagation(); zoomOut(); }} className="p-2 bg-black/50 rounded-full text-white hover:text-[#c9a227]" aria-label="Zoom out">
+                      <ZoomOut className="w-6 h-6" />
+                    </button>
+                  </div>
+                  <TransformComponent wrapperStyle={{ width: "100%", height: "100%" }} contentStyle={{ width: "100%", height: "100%" }}>
+                     <Image
+                      src={allImages[selectedImage]?.image || "/placeholder.svg"}
+                      alt={allImages[selectedImage]?.title || "Selected image"}
+                      fill
+                      className="object-contain"
+                      sizes="100vw"
+                      quality={100}
+                     />
+                  </TransformComponent>
+                </>
+              )}
+            </TransformWrapper>
           </div>
         </div>
       )}
