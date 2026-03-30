@@ -687,6 +687,48 @@ const allImages = [
     image: "/testimonials/WhatsApp Image 2026-03-14 at 9.41.20 AM.jpeg",
     type: "image",
   },
+  {
+    id: 114,
+    title: "Happy Customer 114",
+    image: "/testimonials/WhatsApp Image 2026-03-28 at 8.09.43 PM (1).jpeg",
+    type: "image",
+  },
+  {
+    id: 115,
+    title: "Happy Customer 115",
+    image: "/testimonials/WhatsApp Image 2026-03-28 at 8.09.43 PM.jpeg",
+    type: "image",
+  },
+  {
+    id: 116,
+    title: "Happy Customer 116",
+    image: "/testimonials/WhatsApp Image 2026-03-28 at 8.09.44 PM (1).jpeg",
+    type: "image",
+  },
+  {
+    id: 117,
+    title: "Happy Customer 117",
+    image: "/testimonials/WhatsApp Image 2026-03-28 at 8.09.44 PM.jpeg",
+    type: "image",
+  },
+  {
+    id: 118,
+    title: "Happy Customer 118",
+    image: "/testimonials/WhatsApp Image 2026-03-28 at 8.09.45 PM.jpeg",
+    type: "image",
+  },
+  {
+    id: 119,
+    title: "Happy Customer 119",
+    image: "/testimonials/WhatsApp Image 2026-03-28 at 8.36.34 PM.jpeg",
+    type: "image",
+  },
+  {
+    id: 120,
+    title: "Happy Customer 120",
+    image: "/testimonials/WhatsApp Image 2026-03-30 at 5.34.17 PM.jpeg",
+    type: "image",
+  },
 ];
 
 export default function CustomerGalleryPage() {
